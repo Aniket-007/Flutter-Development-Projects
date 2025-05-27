@@ -17,7 +17,6 @@ class _CurrencyConverterCupertinoPageState extends State<CurrencyConverterCupert
      setState(() {});
   }
 
-  
      @override
       void dispose(){
       textEditingController.dispose();
