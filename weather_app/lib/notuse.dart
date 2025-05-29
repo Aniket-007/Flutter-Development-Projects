@@ -89,7 +89,7 @@ class _WeatherAppState extends State<WeatherApp> {
                         children: [
                           Text(
                             '$temp K',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 40,
                             ),
