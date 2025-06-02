@@ -3,12 +3,16 @@ import 'package:provider/provider.dart';
 import 'package:provider_example/counter_provider.dart';
 import 'package:provider_example/list_map_provider.dart';
 import 'package:provider_example/listpage.dart';
+import 'package:provider_example/listview_demo/listview_demo.dart';
+import 'package:provider_example/provider_example/home_new.dart';
+import 'package:provider_example/provider_example/list_number_provider.dart';
 
 void main() {
   runApp(MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (context)=> ListMapProvider()),
           ChangeNotifierProvider(create: (context)=> CounterProvider()),
+          ChangeNotifierProvider(create: (context)=> ListNumberProvider())
         ],
         child: MyApp()));
 }
@@ -24,7 +28,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Listpage()
+      // home: Listpage()
+      // home: HomeNew()
+      home: ListviewDemo()
     );
   }
 }
